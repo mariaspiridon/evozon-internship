@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input form</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="body">
+  <div class="container">
+    <div>
+      <img id="title-img" src="book.jpg"/>
+      <p id="title">
+        Minions Form
+      </p>
+    </div>
+    <form>
+      <div class="position-relative">
+        <i id="icon1" class="material-icons">perm_identity</i>
+        <input type="text" placeholder="Username"/>
+      </div>
+      <div class="position-relative">
+        <i id="icon2"  class="material-icons">email</i>
+        <input type="text" placeholder="Email"/>
+      </div>
+      <div class="position-relative">
+        <i id="icon3"  class="material-icons">lock_outline</i>
+        <input type="text" placeholder="Password"/>
+      </div>
+      <div class="position-relative">
+        <i id="icon4"  class="material-icons">lock_outline</i>
+        <input type="text" placeholder="Re-type password"/>
+      </div>
+      <input id="choose-file" type="file"/>
+      <div class="position-relative" id="show-btn">
+        <img id="uploaded-img"/>
+        <div id="buttons-div" class="row">
+          <div class="col-50">
+            <button id="edit-button" class="hover-button">
+              <i id="edit-icon"  class="material-icons inline-block">mode_edit</i>
+              <p class="inline-block no-margin">Edit</p>
+            </button>
+          </div>
+          <div class="col-50">
+            <button id="delete-button" class="hover-button">
+              <i id="delete-icon" class="material-icons">delete</i>
+              <p class="inline-block no-margin">Delete</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul id="minion-ul">
+        <li>
+          <a href="" id="dropdown-menu">Choose minion</a>
+          <ul>
+            <li>
+              <a href="">Despicable Me</a>
+              <ul>
+                <li><a href="">Dave</a></li>
+                <li><a href="">Jerry</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Despicable Me 2</a>
+              <ul>
+                <li><a href="">Lance</a></li>
+                <li><a href="">Tom</a></li>
+                <li><a href="">Mark</a></li>
+                <li><a href="">Phil</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Minions</a>
+              <ul>
+                <li><a href="">Kevin</a></li>
+                <li><a href="">Bob</a></li>
+                <li><a href="">Stuart</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="clear-both">
+        <button id="register-button">REGISTER NOW</button>
+      </div>
+    </form>
+    <div class="center">
+      <p id="login-text">Already have an account?&nbsp;</p>
+      <a href="form.html">Login</a>
+    </div>
+  <script src="form.js"></script>
+</body>
+</html>
