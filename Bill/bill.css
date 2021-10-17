@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  -webkit-print-color-adjust: exact;
+}
+p {
+  color: gray;
+}
+.main-div {
+  padding-bottom: 45px;
+}
+.container {
+  font-family: consolas;
+  font-size: 13px;
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: 10mm auto;
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  .container {
+    margin: 0;
+  }
+}
+.m-icon {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self:center;
+  margin: 0;
+}
+.m {
+  align-self: center;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.sender {
+  display: flex;
+}
+.sender-info {
+  line-height: 50%;
+  margin-left: auto;
+  text-align: right;
+  margin-bottom: 0;
+}
+.row {
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+.col-6 {
+  width: 50%;
+  float: left;
+}
+.invoice {
+  text-align: right;
+}
+.invoice-number {
+  margin-top: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  color: black;
+}
+tr {
+  color: gray;
+}
+td:nth-child(5), th:nth-child(5) {
+  text-align: right;
+}
+td:nth-child(4), th:nth-child(4) {
+  text-align: center;
+}
+td:nth-child(3), th:nth-child(3) {
+  text-align: center;
+}
+.border-line-tr > td {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.padding-tr > td {
+  padding-bottom: 15px;
+}
+.black-td {
+  color: black;
+}
+td.border-none {
+  border-bottom: none;
+}
+.padding-top > td{
+  padding-top: 15px;
+}
+th, td {
+  padding-bottom: 15px;
+}
+.total-tr >td {
+  padding-top:15px;
+}
+hr {
+  border-top: 1px solid #d9d9d9;
+}
+h1 {
+  margin-top:0;
+}
+h5 {
+  padding-bottom: 30px;
+}
+.padding-bottom {
+  padding-bottom: 40px;
+}
+.last-para {
+  padding-top: 10px;
+}
