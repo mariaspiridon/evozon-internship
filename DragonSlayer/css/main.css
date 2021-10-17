@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1200px;
+}
+
+span,
+p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 6px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: transparent;
+}
+
+    button:focus {
+        outline: none;
+    }
+
+#thorE,
+#thorH {
+    color: black;
+    border: 2px solid #f44336;
+}
+
+    #thorE:hover,
+    #thorH:hover {
+        background-color: #f44336;
+        color: white;
+    }
+
+#loki {
+    color: black;
+    border: 2px solid #13631A;
+}
+
+    #loki:hover {
+        background-color: #13631A;
+        color: white;
+    }
+
+.col-4 {
+    width: 33%;
+    margin-top: 10px;
+    height: 67vh;
+    position: relative;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.col-3 {
+    width: 25%;
+    text-align: center;
+}
+
+.col {
+    width: 33%;
+    float: left;
+    height: 50px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+#player-mode {
+    margin-bottom: 8px;
+}
+
+#attackBtn {
+    display: none;
+    float: right;
+    margin-top: 10px;
+    color: black;
+    border: 2px solid #555555;
+}
+
+    #attackBtn:hover {
+        background-color: #555555;
+        color: white;
+    }
+
+#purify1,
+#purify2 {
+    display: none;
+    border-radius: 100%;
+    margin-top: 10px;
+    color: black;
+    border: none;
+}
+
+    #purify1:hover,
+    #purify2:hover {
+        background-color: #555555;
+        color: white;
+    }
+
+#dragonHP {
+    text-align: center;
+}
+
+progress {
+    display: none;
+    width: 100%;
+}
+
+#dragonBar {
+    background: #555555;
+}
+
+#fighterBar {
+    background: #f44336;
+}
+
+progress::-webkit-progress-bar {
+    background: #d9d9d9;
+}
+
+#dragonBar::-webkit-progress-value {
+    background: #555555;
+}
+
+#fighterBar::-webkit-progress-value {
+    background: #f44336;
+}
+
+#asgard {
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
